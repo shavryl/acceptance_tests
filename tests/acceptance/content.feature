@@ -1,6 +1,5 @@
-# Created by admin at 09.02.2018
-Feature: #Enter feature name here
-  # Enter feature description here
-
-  Scenario: # Enter scenario name here
-    # Enter steps here
+Feature: Test that feature have correct content
+  Scenario: Blog page has a correct title
+    Given I am on the blog page
+    Then There is a title shown on the page
+    And The title tag has content "This is the blog page"
