@@ -18,7 +18,7 @@ def step_impl(context, content):
     assert page.title.text == content
 
 
-@step('I can see there is a posts section on the page')
+@then('I can see there is a posts section on the page')
 def step_impl(context):
     page = BlogPage(context.driver)
     assert page.posts_section.is_displayed()
